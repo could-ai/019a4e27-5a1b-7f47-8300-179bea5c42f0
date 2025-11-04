@@ -66,9 +66,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # Lottie animation files
+  # Lottie animation files, icons, and splash assets
   assets:
     - assets/animations/
+    - assets/icons/app_icon.png
+    - assets/splash/logo.png
+    - assets/splash/background.png
 
   # Custom fonts (if needed beyond Google Fonts)
   fonts:
@@ -77,12 +80,3 @@ flutter:
         - asset: fonts/PTSans-Regular.ttf
         - asset: fonts/PTSans-Bold.ttf
           weight: 700
-
-  # App icons
-  icons:
-    - asset: assets/icons/app_icon.png
-
-  # Splash screen assets
-  splash:
-    - asset: assets/splash/logo.png
-    - asset: assets/splash/background.png
