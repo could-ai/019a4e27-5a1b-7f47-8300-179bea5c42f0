@@ -12,6 +12,52 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
 
+  # Game Engine for Flappy Bird and Snake & Ladder
+  flame: ^1.18.0
+  flame_audio: ^2.10.2
+
+  # Scratch Card functionality
+  scratcher: ^2.3.0
+
+  # Confetti animations for rewards
+  confetti: ^0.7.0
+
+  # Lottie animations
+  lottie: ^3.1.2
+
+  # Provider for state management (as mentioned in technical specs)
+  provider: ^6.1.2
+
+  # Firebase integration
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  firebase_messaging: ^15.1.3
+  firebase_functions: ^5.1.3
+  firebase_hosting: ^1.0.0
+
+  # For UPI payments and sharing
+  url_launcher: ^6.3.0
+  share_plus: ^10.0.2
+
+  # For local notifications (fallback when FCM not available)
+  flutter_local_notifications: ^17.2.3
+
+  # For checking internet connectivity
+  connectivity_plus: ^6.0.5
+
+  # For device info and unique identifiers
+  device_info_plus: ^10.1.2
+
+  # For secure storage of tokens
+  flutter_secure_storage: ^9.2.2
+
+  # For image picking (profile pictures)
+  image_picker: ^1.1.2
+
+  # For web scraping or additional APIs if needed
+  http: ^1.2.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -19,3 +65,24 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  # Lottie animation files
+  assets:
+    - assets/animations/
+
+  # Custom fonts (if needed beyond Google Fonts)
+  fonts:
+    - family: PT Sans
+      fonts:
+        - asset: fonts/PTSans-Regular.ttf
+        - asset: fonts/PTSans-Bold.ttf
+          weight: 700
+
+  # App icons
+  icons:
+    - asset: assets/icons/app_icon.png
+
+  # Splash screen assets
+  splash:
+    - asset: assets/splash/logo.png
+    - asset: assets/splash/background.png

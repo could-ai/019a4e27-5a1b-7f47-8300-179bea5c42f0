@@ -12,37 +12,31 @@ import 'package:couldai_user_app/screens/profile_page.dart';
 import 'package:couldai_user_app/screens/refer_earn_page.dart';
 import 'package:couldai_user_app/screens/tasks_page.dart';
 
-void main() {
-  runApp(const MintHubApp());
-}
-
-class MintHubApp extends StatelessWidget {
-  const MintHubApp({super.key});
-
+class MintHubDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => WalletProvider(),
       child: InternetCheck(
         child: MaterialApp(
-          title: 'MintHub',
+          title: 'MintHub Demo',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             brightness: Brightness.dark,
-            scaffoldBackgroundColor: const Color(0xFF0A0F1A),
+            scaffoldBackgroundColor: Color(0xFF0A0F1A),
             textTheme: GoogleFonts.ptSansTextTheme(
-              ThemeData(brightness: Brightness.dark).textTheme,
-            ),
+            ThemeData(brightness: Brightness.dark).textTheme,
           ),
-          home: const SplashScreen(),
+        ),
+          home: SplashScreen(),
           routes: {
-            '/home': (_) => const MainScreen(),
-            '/games': (_) => const GamesListPage(),
-            '/scratch': (_) => const ScratchCardPage(),
-            '/wallet': (_) => const WalletPage(),
-            '/profile': (_) => const ProfilePage(),
-            '/refer': (_) => const ReferEarnPage(),
-            '/tasks': (_) => const TasksPage(),
+            '/home': (_) => MainScreen(),
+            '/games': (_) => GamesListPage(),
+            '/scratch': (_) => ScratchCardPage(),
+            '/wallet': (_) => WalletPage(),
+            '/profile': (_) => ProfilePage(),
+            '/refer': (_) => ProfilePage(),
+            '/tasks': (_) => TasksPage(),
           },
         ),
       ),
