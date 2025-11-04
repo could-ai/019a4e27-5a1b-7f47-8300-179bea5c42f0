@@ -34,7 +34,6 @@ dependencies:
   cloud_firestore: ^5.4.4
   firebase_messaging: ^15.1.3
   firebase_functions: ^5.1.3
-  firebase_hosting: ^1.0.0
 
   # For UPI payments and sharing
   url_launcher: ^6.3.0
